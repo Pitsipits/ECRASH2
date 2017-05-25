@@ -1,0 +1,37 @@
+<ion-view view-title="Sign Up" hide-back-button="true">
+  <ion-content class = "login">
+<!-- <img src="" width="130px"> -->
+ <div class="header padding text-center">
+                        <img src="img/crash.png"  width="300" height="150" alt="Your logo here"/>
+                    </div><br>
+<br>
+<br>
+<br>
+       
+<div class="row responsive-md" ng-controller="register">
+ <div class="col col-50 col-offset-25">
+
+<form ng-submit="loginform()">
+<label class="item item-input">
+
+    <input type="text" ng-model="fullname" placeholder ="Last Name, First Name" required>
+  </label>
+  <label class="item item-input">
+    
+    <input type="text" ng-model="username" placeholder = "Username" required>
+  </label>
+  <label class="item item-input">
+   
+    <input type="password" ng-model="password" placeholder = "Password" required>
+  </label>
+ 
+  
+  <button type="submit"class="button button-block button-positive"> Submit</button> 
+  <div class="col text-center">
+                         <a href="#/login">  <button class="button button-clear button-light" >
+                               Login
+                            </button></a>
+</form>
+</div>
+</ion-view>
+</ion-content>

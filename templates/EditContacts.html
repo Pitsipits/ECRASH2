@@ -1,0 +1,42 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <a class="button icon-left ion-ios-arrow-left button-clear button-dark" href="#/tab/admin">EDIT</a>
+    <h1 class="title">แก้ไขผู้ดูแลระบบ</h1>
+    <a class="button button-icon icon ion-person-add" href="#/tab/admin-create"></a>
+  </ion-header-bar>
+  <ion-content class="padding">
+
+    <form ng-submit="editAdmin()">
+      <div class="list">
+
+        <input type="hidden" ng-model="adminDatas.admin_id">
+
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="adminDatas.admin_user">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="text" ng-model="adminDatas.admin_password">
+        </label>
+
+
+        <label class="item item-input">
+          <button class="button button-block button-positive" type="submit">Edit</button>
+        </label>
+
+
+      </div>
+    </form>
+
+
+
+
+
+
+
+
+
+  </ion-content>
+</ion-view>
